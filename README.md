@@ -17,12 +17,16 @@ Users may deposit USDC into a market pool and receive DLLTs in exchange, represe
 
 #### Withdrawals
 
-Users can exchange their DLLTs for USDC from the associated pool.
+Users can exchange their DLLTs for USDC from the associated pool. Users will receive the amount of USDC equivalent to their share of the total pool value. For example, if a user holds 10% of the minted DLLTs for a pool of value $1000, they can withdraw $100.
 
 #### Liquidations
 
 A liquidation event occurs when the value of a pool goes to 0 during a rebalancing. This causes a counter party risk for the profiting pool as not enough funds are able to be moved to cover the increase in value.
 
+Mutex Capital is designed such that users DLLTs will be automatically disgarded if a liquidation occurs. This protects the future depositees into that position.
+
+In saying this, it is not possible for any individual user to be liquidated- only an entire pool can be liquidated and all users tokens within it will be disgarded. 
+
 #### Fees
 
-Mutex Capital takes a 1% fee on all volume in the markets.
+Mutex Capital takes a 1% fee on all deposits and withdrawals in the markets, with 0.5% going to LP providers and 0.5% going to the protocol. In addition, the protocol takes 0.01% of rebalancing funds to cover server fees.
