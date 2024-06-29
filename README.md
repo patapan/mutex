@@ -11,7 +11,7 @@ Each market contains 2 pools, a BULL pool and BEAR pool, both at a set leverage.
 
 #### Re-balancing mechanism
 
-The pools are incentivised to stay balanced by the fact that the amount of USDC transferred between pools is defined as `max(BULL pool value, BEAR pool value) * Δ%P`. For example, if we had a SOLBULLX3 pool containing $1 and a SOLBEARX3 pool containing $10000, and the token moves up 10%, then 30% of the BEAR pool ($3000) is shifted to the BULL pool. This means that the BULL pool has returns equal to 299900%! Users who capitalise these pool imbalances have the opportunity for significant reward.
+The pools are incentivised to stay balanced by the fact that the amount of USDC transferred between pools is defined as `max(BULL pool value, BEAR pool value) * Δ%P`. For example, if we had a SOLBULLX3 pool containing $1 and a SOLBEARX3 pool containing $10000, and the token moves up 10%, then 30% of the BEAR pool ($3000) is shifted to the BULL pool. **This means that the BULL pool has returns equal to 299900%!** Users who capitalise on these pool imbalances have the opportunity for significant reward.
 
 #### Deposits
 
