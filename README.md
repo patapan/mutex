@@ -30,3 +30,8 @@ Mutex Capital is designed such that users DLLTs will be automatically disgarded 
 #### Fees
 
 Mutex Capital takes a 1% fee on all deposits and withdrawals in the markets, with 0.5% going to LP providers and 0.5% going to the protocol fund. In addition, the protocol takes 0.01% of rebalancing funds to cover server fees.
+
+
+### Oracle
+
+We use Pyth as our source of on-chain price data which publishes price data to various `price feed accounts`.
