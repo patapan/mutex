@@ -6,15 +6,12 @@
 
 namespace mutex {
 
-struct Order { 
-    int64_t price;
-    uint64_t quantity;
-    int64_t filled_volume;
-};
+auto timePriceHigh = [](){};
 
 class OrderBook {
-    std::map<Order, std::vector<Order>, std::greater> bids;
-    std::map<Order, std::vector<Order>, std::greater> asks;
+    std::map<Order, std::vector<Order>, decltype(timePriceHigh)> bids;
+    // bids are sorted by highest price first, then by time
+    std::map<Order, std::vector<Order>, decltype(timePriceHigh)> asks;
 
     OrderBook() {
 
