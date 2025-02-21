@@ -1,1 +1,5 @@
 build/
+bazel-bin/
+bazel-mutex/
+bazel-out/
+bazel-testlogs/
