@@ -1,2 +1,6 @@
 
-#include "agn/pybindings/bindings.hpp"
+// TODO stuff
+int main()
+{
+    return 0;
+}
